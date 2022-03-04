@@ -7,7 +7,7 @@ const authentication=async (req,res,next)=>{
   try {
     const token=req.cookies.jwt;
     // console.log(typeof(token));
-    // console.log("kamlesh"+token+"kamlesh");
+    // console.log("Naman"+token+"Naman");
     const isValid=jwt.verify(token,process.env.SECRET_KEY); //isValid will be id of user document
     // console.log(isValid); 
 
